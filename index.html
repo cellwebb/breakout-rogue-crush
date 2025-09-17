@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout Rogue Crush</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect x=%2210%22 y=%2230%22 width=%2280%22 height=%2240%22 fill=%22%231a1a1a%22 stroke=%22%23fff%22 stroke-width=%225%22/><circle cx=%2250%22 cy=%2250%22 r=%228%22 fill=%22%23fff%22/></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Breakout Rogue Crush</h1>
+            <div class="stats">
+                <div class="stat">Level: <span id="level">1</span></div>
+                <div class="stat">Lives: <span id="lives">3</span></div>
+                <div class="stat">Score: <span id="score">0</span></div>
+            </div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <p>Use ← → arrow keys to move paddle | Space to restart</p>
+        </div>
+        <div class="features">
+            <h2>Roguelike Features</h2>
+            <ul>
+                <li>Procedurally generated levels</li>
+                <li>Power-ups with permanent upgrades</li>
+                <li>Permadeath with score persistence</li>
+                <li>Randomized brick layouts</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
